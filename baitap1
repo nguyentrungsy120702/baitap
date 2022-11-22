@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Enter Your Information</h1>
+
+<form action="show.jsp">
+<label for="a">Number to purchase</label>
+<input value="" type=text id="a" name="number" min=1  >* <br><br>
+<label for="b">Your Name</label>
+<input value="" type=text id="b" name="name"  >* <br><br>
+<label for="c">Your Phone</label>
+<input value="" type=text id="c" name="phone"  >* <br><br>
+<label for="c">Your Email</label>
+<input value="" type=email id="d" name="email"  >(opitional) <br><br>
+<label for="c">Number</label>
+<input value="" type=text id="d" name="nuber1"  ><br><br>
+<label for="c">Creat Information</label>
+<input value="" type=text id="d" name="email"  ><br><br>
+<input type="submit" value="REGISTER">
+
+</form>
+
+<form action="complete.jsp" method="get">
+  <table>
+   <tr>
+     <th>Processor</th>
+     <th>Accessories</th>
+   </tr>
+   <tr>
+    <td>
+     <input type="radio" id="celeron" name="choose" value="Celeron D">
+     <label for="celeron">Celeron D</label> <br>
+     <input type="radio" id="pentium" name="choose" value="Pentium IV">
+     <label for="pentium">Pentium IV</label> <br>
+     <input type="radio" id="Pentiumm" name="choose" value="Pentium D">
+     <label for="pentiumm">Petium D</label>
+    </td>
+    <td>
+      <input type="checkbox" id="mon" name="a" value="monitor">
+      <label for="mon">Monitor</label> <br>
+      <select  name="pro" size=3 multiple>
+     <option value="camera">Camera</option>
+     <option value="printer">Printer</option>
+     <option value="scanner">Scanner</option>
+    </select>
+    </td>
+   </tr>
+   </table>	
+   <button type="submit">PURCHASE</button>
+ </form>  
+
+</body>
+</html>
